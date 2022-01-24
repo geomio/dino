@@ -1,3 +1,15 @@
 body {
   background-color: rgb(247, 150, 150);
 }
+
+#win {
+  display: none;
+}
+
+#end {
+  display: none;
+}
+
+#letterArea {
+  display: none;
+}

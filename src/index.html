@@ -8,14 +8,78 @@
 <body>
   <div class="container">
     <div class="row" id="title">
-      <h1>Hello this button will show dinosaur names</h1>
+      <h1>Hello this button will start a dino hangman game</h1>
+      <h2>users will guess letters using buttons below after game begins</h2>
+      <h3>Users will have 5 guesses max press start to begin</h3>
     </div>
     <div class="row" id="buttonArea">
-      <button id="clickMe">Press</button>
+      <button id="clickMe">Start Game</button>
+      <!-- <button id="click2">Start</button> -->
     </div>
-    <div class="row" id="display">
-      <p></p>
+
+    <div id="game">
+      <div class="row">
+        <div class="panel">
+          <h2>User Incorrect letters below</h2>
+          <p><span id="wrongGuess"></span></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="panel">
+          <h1> Dino word display</h1>
+          <p><span id="underscoreArea"></span></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="panel">
+          <h1>Total guesses</h1>
+          <p><span id="guess"></span></p>
+        </div>
+      </div>
     </div>
+
+    <div id="end">
+      <h1>Sorry! Game Over</h1>
+      <button class="reset">Try Again</button>
+    </div>
+
+    <div id="win">
+      <h1>You win</h1>
+      <button class="reset">Try Again</button>
+    </div>
+
+    <form id="mainSubmit">
+      <div class="row" id="letterArea">
+        <div class="btn-group" role="group">
+          <button type="submit" name="letters" value="a">A</button>
+          <button type="submit" name="letters" value="b">B</button>
+          <button type="submit" name="letters" value="c">C</button>
+          <button type="submit" name="letters" value="d">D</button>
+          <button type="submit" name="letters" value="e">E</button>
+          <button type="submit" name="letters" value="f">F</button>
+          <button type="submit" name="letters" value="g">G</button>
+          <button type="submit" name="letters" value="h">H</button>
+          <button type="submit" name="letters" value="i">I</button>
+          <button type="submit" name="letters" value="j">J</button>
+          <button type="submit" name="letters" value="k">K</button>
+          <button type="submit" name="letters" value="l">L</button>
+          <button type="submit" name="letters" value="m">M</button>
+          <button type="submit" name="letters" value="n">N</button>
+          <button type="submit" name="letters" value="o">O</button>
+          <button type="submit" name="letters" value="p">P</button>
+          <button type="submit" name="letters" value="q">Q</button>
+          <button type="submit" name="letters" value="r">R</button>
+          <button type="submit" name="letters" value="s">S</button>
+          <button type="submit" name="letters" value="t">T</button>
+          <button type="submit" name="letters" value="u">U</button>
+          <button type="submit" name="letters" value="v">V</button>
+          <button type="submit" name="letters" value="w">W</button>
+          <button type="submit" name="letters" value="x">X</button>
+          <button type="submit" name="letters" value="y">Y</button>
+          <button type="submit" name="letters" value="z">Z</button>
+        </div>
+      </div>
+    </form>
   </div>
 </body>
 
